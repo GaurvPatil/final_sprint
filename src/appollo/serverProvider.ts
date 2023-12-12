@@ -9,7 +9,9 @@ export const { getClient } = registerApolloClient(() => {
   return new NextSSRApolloClient({
     cache: new NextSSRInMemoryCache(),
     link: new HttpLink({
-      uri: "http://localhost:3000/api/graphql",
+      //uri: "http://localhost:3000/api/graphql", //for local environment 
+      uri:"https://final-sprint-7dickbuwa-gaurvpatil.vercel.app/api/graphql" //live site
+      
     }),
   });
 });
