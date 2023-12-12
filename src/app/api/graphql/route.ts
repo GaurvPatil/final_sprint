@@ -2,7 +2,7 @@ import { startServerAndCreateNextHandler } from "@as-integrations/next";
 import { ApolloServer } from "@apollo/server";
 import { NextRequest } from "next/server";
 import { gql } from "graphql-tag";
-import { prisma } from "@/dbconfig/dbConfig";
+import { prisma } from "../../../../prisma/dbconfig/dbConfig";
 
 const typeDefs = gql`
   type student {
@@ -39,7 +39,8 @@ const resolvers = {
 
   Query: {
     getStudents: async () => {
-      return await prisma.student.findMany();
+   
+    return await prisma.student.findMany();
     },
   },
 };
