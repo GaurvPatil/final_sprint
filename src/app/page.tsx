@@ -18,7 +18,9 @@ export default function Home() {
 
   const router = useRouter();
 
-  const { data } = useSuspenseQuery<{ getStudents: Array<{ username: string; email: string }> }>(query); //there is solution for this(codegen) 
+  const { data } = useSuspenseQuery<{
+    getStudents: Array<{ username: string; email: string }>;
+  }>(query); //there is solution for this(codegen)
 
   return (
     <Stack direction="row" spacing={2}>

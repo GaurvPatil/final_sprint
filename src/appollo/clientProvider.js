@@ -11,8 +11,8 @@ import {
 
 function makeClient() {
   const httpLink = new HttpLink({
-      //uri: "http://localhost:3000/api/graphql", //for local environment 
-      uri:"https://final-sprint-7dickbuwa-gaurvpatil.vercel.app/api/graphql" //live site
+    //uri:process.env.API_LOCAL_SITE, //for local environment 
+    uri:process.env.API_LIVE_SITE //live site
   });
 
   return new NextSSRApolloClient({
