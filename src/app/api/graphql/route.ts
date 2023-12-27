@@ -18,6 +18,7 @@ const resolvers = {
 const server = new ApolloServer({
     typeDefs,
     resolvers,
+    
 });
 
 // Typescript: req has the type NextRequest
