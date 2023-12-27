@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "@as-integrations/next": "^3.0.0",
+    "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.2",
+    "@mui/lab": "^5.0.0-alpha.158",
     "@mui/material": "^5.15.2",
+    "@mui/material-nextjs": "^5.15.0",
+    "graphql-tag": "^2.12.6",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
