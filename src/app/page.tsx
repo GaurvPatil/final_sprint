@@ -10,6 +10,8 @@ export default async function Home() {
   const client = getClient();
   const { data } = await client.query({ query });
   
+
+  
   return (
     <main >
    <Navbar />
