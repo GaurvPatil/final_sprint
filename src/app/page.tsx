@@ -2,13 +2,13 @@ import Navbar from "./ui/home/navbar";
 import {getClient } from "@/apolloProvider/serverProvider"
 import { gql } from "@apollo/client";
 
-const query = gql`query Query {
-  hello
-}`;
+// const query = gql`query Query {
+//   hello
+// }`;
 
 export default async function Home() {
   const client = getClient();
-  const { data } = await client.query({ query });
+  // const { data } = await client.query({ query });
   
 
   
@@ -16,7 +16,7 @@ export default async function Home() {
     <main >
    <Navbar />
    {
-    data?.hello
+    // data?.hello
    }
    
     </main>

@@ -1,28 +1,28 @@
 "use client";
 import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
 
-import { gql } from "@apollo/client";
+// import { gql } from "@apollo/client";
 
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
-const query = gql`
-  query Query {
-    hello
-  }
-`;
+// const query = gql`
+//   query Query {
+//     hello
+//   }
+// `;
 export default function Navbar() {
-  interface QueryResponse {
-    hello: string;
-  }
-  const { data } = useSuspenseQuery<QueryResponse>(query);
+  // interface QueryResponse {
+  //   hello: string;
+  // }
+  // const { data } = useSuspenseQuery<QueryResponse>(query);
   return (
     <>
       <Stack direction="row" spacing={2}>
         {
-          data?.hello
+          // data?.hello
         }
         <Link
           href="admin/register/"
